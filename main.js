@@ -1,12 +1,12 @@
 let pageIntros = {
 	home: "This is the Home Page. Welcome!",
 	about: "My name is Daniel, I'm a guy.",
-	projects: "I'm working on the following things.",
+	portfolio: "I'm working on the following things.",
 	contact: "Email or call me!"
 };
 
 function setIntroText(section) {
-		document.getElementById("intro-text").innerHTML = pageIntros[section];
+	document.getElementById("intro-text").innerHTML = pageIntros[section];
 }
 
 document.onload = setIntroText("home");
