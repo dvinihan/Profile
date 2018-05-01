@@ -1,3 +1,8 @@
+:root {
+    --margin: 3px;
+    --tech-font-size: 14px;
+}
+
 .projectsContainer {
     display: none;
 }
@@ -7,5 +12,11 @@
 }
 
 .projectURL {
-    margin-top: 3px;
+    margin-top: var(--margin);
+}
+
+.techUsed {
+    margin-top: var(--margin);
+    font-style: italic;
+    font-size: var(--tech-font-size);
 }

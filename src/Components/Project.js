@@ -11,7 +11,8 @@ export class Project extends Component {
                     return (
                         <div key={element.projectName} className="group">
                             <div className="projectName">{element.projectName}</div>
-                            <div className="projectURL">{element.projectURL}</div>
+                            <a className="projectURL" target="_blank" href={element.projectURL}>{element.projectURL}</a>
+                            <div className="techUsed">Built with {element.techUsed}</div>
                         </div>
                     )
                 })}
