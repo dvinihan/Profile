@@ -19,4 +19,5 @@
     margin-top: var(--margin);
     font-style: italic;
     font-size: var(--tech-font-size);
+    margin-left: 15px;
 }

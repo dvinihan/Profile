@@ -4,19 +4,20 @@ import './Project.css';
 
 export class Project extends Component {
 
-    render(){
-        return(
-            <div className="projectsContainer introText">
-                {this.props.projects.map(element => {
-                    return (
-                        <div key={element.projectName} className="group">
-                            <div className="projectName">{element.projectName}</div>
-                            <a className="projectURL" target="_blank" href={element.projectURL}>{element.projectURL}</a>
-                            <div className="techUsed">Built with {element.techUsed}</div>
-                        </div>
-                    )
-                })}
-            </div>
-        );
-    }
+	render(){
+		return(
+				<div className="projectsContainer pageContent">
+					{this.props.projects.map(element => {
+						return (
+							<div key={element.projectName} className="group">
+									<div className="projectName">{element.projectName}
+									<span className="techUsed">--Built with {element.techUsed}</span></div>
+									<div><a className="projectURL" target="_blank" href={element.projectURL}>{element.projectURL}</a></div>
+									<div className="">{element.description}</div>
+							</div>
+						)
+					})}
+				</div>
+		);
+	}
 }
