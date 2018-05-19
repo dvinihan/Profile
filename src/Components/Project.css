@@ -1,6 +1,6 @@
 :root {
-    --margin: 3px;
-    --tech-font-size: 14px;
+    --margin: 5px;
+    --usedTech-font-size: 14px;
 }
 
 .projectsContainer {
@@ -8,7 +8,7 @@
 }
 
 .group {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .projectURL {
@@ -16,8 +16,12 @@
 }
 
 .techUsed {
-    margin-top: var(--margin);
     font-style: italic;
-    font-size: var(--tech-font-size);
+    font-size: var(--usedTech-font-size);
     margin-left: 15px;
+}
+
+.description {
+    margin-top: var(--margin);
+    font-size: 14px;
 }

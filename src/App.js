@@ -11,34 +11,34 @@ class App extends Component {
     this.state = {
         projects: [
           {
-            projectName: "Forum",
+            projectName: "Blue Forum",
             projectURL: "https://github.com/dvinitsky/forum",
             techUsed: "React",
-            description: ''
+            description: 'My first independent React app. Employs props, state, and components to render a sleek interface for writing comments. My next goal with this project is to add a backend with MongoDB so that posts can be preserved between sessions.'
           },
           {
             projectName: "Jammin",
             projectURL: "https://github.com/dvinitsky/Jammin-React",
             techUsed: "React",
-            description: ''
+            description: 'Created as a part of the Codecademy React certificate. Employed newly acquired skills including passing props, setting state, and watching for text input.'
           },
           {
             projectName: "Tic-Tac-Toe",
-            projectURL: "https://github.com/dvinitsky/Tic-Tac-Toe",       
+            projectURL: "https://github.com/dvinitsky/Tic-Tac-Toe",
             techUsed: "React",
-            description: ''
+            description: 'Simple Tic-Tac-Toe game using CSS Grid for layout, and React to implement square components.'
           },
           {
             projectName: "Pong",
             projectURL: "https://github.com/dvinitsky/Pong-game",
             techUsed: "Javascript",
-            description: ''
+            description: 'Built entirely in JavaScript, HTML and CSS, this project uses event watchin on the DOM to process arrow input.'
           },
           {
             projectName: "War",
             projectURL: "https://github.com/dvinitsky/War",
             techUsed: "Javascript",
-            description: ''
+            description: 'Simple War game that generates random cards for the user and the computer player.'
           },
           {
             projectName: "Task Manager",
