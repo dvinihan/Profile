@@ -1,27 +1,39 @@
 :root {
-    --margin: 5px;
+    --topMargin: 5px;
+    --spaceMargin: 20px;
+
     --usedTech-font-size: 14px;
 }
 
 .projectsContainer {
     display: none;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    text-align: center; 
+    column-gap: var(--spaceMargin);
+    row-gap: var(--spaceMargin);
+    margin-right: 30px;
+    margin-bottom: 15px;
+
+
 }
 
-.group {
-    margin-bottom: 30px;
+.project {
+    padding: 15px;
+    background-color: #e9dcdc;
+    border-radius: 8px;
 }
 
 .projectURL {
-    margin-top: var(--margin);
+    margin-top: var(--topMargin);
 }
 
 .techUsed {
     font-style: italic;
     font-size: var(--usedTech-font-size);
-    margin-left: 15px;
+    margin-top: var(--topMargin);
 }
 
 .description {
-    margin-top: var(--margin);
+    margin-top: var(--topMargin);
     font-size: 14px;
 }

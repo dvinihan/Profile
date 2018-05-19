@@ -1,10 +1,12 @@
 html {
   font-family: helvetica;
-  background-color: #7ca8cc;
   width: auto;
+  background-color: #7ca8cc;
 }
 
 header {
+  margin: 0;
+  padding: 15px;
   background-color: #a5484d;
   text-align: center;
   width: auto;;

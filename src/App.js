@@ -67,7 +67,7 @@ class App extends Component {
   
     setpageContent(section) {
       if(section === "portfolio"){
-        document.getElementsByClassName('projectsContainer')[0].style.display = "block";
+        document.getElementsByClassName('projectsContainer')[0].style.display = "grid";
         document.getElementsByClassName('pageContent')[0].innerHTML = "";
       }
       else {
