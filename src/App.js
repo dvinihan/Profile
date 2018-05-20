@@ -13,43 +13,43 @@ class App extends Component {
         projects: [
           {
             projectName: "Blue Forum",
-            projectURL: "https://github.com/dvinitsky/forum",
+            projectURL: "http://blue-forum.surge.sh",
             techUsed: "React",
             description: 'My first independent React app. Employs props, state, and components to render a sleek interface for writing comments. My next goal with this project is to add a backend with MongoDB so that posts can be preserved between sessions.'
           },
           {
             projectName: "Jammin",
-            projectURL: "https://github.com/dvinitsky/Jammin-React",
+            projectURL: "http://daniel_v_jammin.surge.sh/",
             techUsed: "React",
             description: 'Created as a part of the Codecademy React certificate. Employed newly acquired skills including passing props, setting state, and watching for text input.'
           },
           {
             projectName: "Tic-Tac-Toe",
-            projectURL: "https://github.com/dvinitsky/Tic-Tac-Toe",
+            projectURL: "dv-tictactoe.surge.sh",
             techUsed: "React",
             description: 'Simple Tic-Tac-Toe game using CSS Grid for layout, and React to implement square components.'
           },
           {
             projectName: "Pong",
-            projectURL: "https://github.com/dvinitsky/Pong-game",
+            projectURL: "dv-pong.surge.sh",
             techUsed: "Javascript",
             description: 'Built entirely in JavaScript, HTML and CSS, this project uses event watchin on the DOM to process arrow input.'
           },
           {
-            projectName: "War",
-            projectURL: "https://github.com/dvinitsky/War",
+            projectName: "War (in progress)",
+            projectURL: "http://dv-war.surge.sh/",
             techUsed: "Javascript",
-            description: 'Simple War game that generates random cards for the user and the computer player.'
+            description: 'WORKING -- Simple War game that generates random cards for the user and the computer player.'
           },
           {
             projectName: "Task Manager",
-            projectURL: "https://github.com/dvinitsky/my-task-manager",
+            projectURL: "http://dv-task-manager.surge.sh/",
             techUsed: "Javascript",
             description: ''
           },
           {
             projectName: "Text Editor",
-            projectURL: "https://github.com/dvinitsky/text-editor-js",
+            projectURL: "dv-text-editor.surge.sh",
             techUsed: "Javascript",
             description: ''
           }
