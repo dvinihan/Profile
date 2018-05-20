@@ -84,6 +84,8 @@ class App extends Component {
   
 
   render() {
+
+    this.setpageContent('home');
    
     return (
       <div>
@@ -95,7 +97,7 @@ class App extends Component {
         </header>
 
         <main>
-          <p className="pageContent">{this.state.pageContent.home}</p>
+          <p className="pageContent"></p>
 
           <Project projects={this.state.projects}/>
 
