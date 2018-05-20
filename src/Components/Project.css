@@ -12,9 +12,8 @@
     column-gap: var(--spaceMargin);
     row-gap: var(--spaceMargin);
     margin-right: 30px;
+    margin-top: 15px;
     margin-bottom: 15px;
-
-
 }
 
 .project {

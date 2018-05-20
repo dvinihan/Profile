@@ -8,6 +8,7 @@ class App extends Component {
   constructor(props){
     super(props);
     this.setpageContent = this.setpageContent.bind(this);
+
     this.state = {
         projects: [
           {
@@ -78,14 +79,13 @@ class App extends Component {
         });
 
         document.getElementsByClassName('pageContent')[0].innerHTML = '<p>' + fullHTML + '</p>';
+
       }
 
     }
   
 
   render() {
-
-    this.setpageContent('home');
    
     return (
       <div>
@@ -97,7 +97,13 @@ class App extends Component {
         </header>
 
         <main>
-          <p className="pageContent"></p>
+          <div className="pageContent">
+            {this.state.pageContent.home.map(paragraph => {
+              return (
+                <p>{paragraph}</p>
+              )
+            })}
+          </div>
 
           <Project projects={this.state.projects}/>
 
