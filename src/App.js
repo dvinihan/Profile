@@ -56,11 +56,11 @@ class App extends Component {
         ],
         pageContent: {
           home: ["Welcome! I am a Software Developer with skills in HTML, CSS, JavaScript, ReactJS, Node.js, and more.", 
-          "I'm currently looking for a Software or Web Development position at a company or consulting agency in the Greater Minneapolis/St. Paul area. I enjoy learning on the job and extending my knowledge of varied technologies."],
+          "I'm currently looking for a Software or Web Development position at a company or consulting agency in the Greater Minneapolis/St. Paul area. I enjoy learning on the job and extending my knowledge of varied technologies.", "<a target='blank' href='https://github.com/dvinitsky/Profile'>https://github.com/dvinitsky/Profile</a>"],
           about: ["Hi! I'm an up-and-coming Web and Software Developer learning on an independent path. I possess excellent organizational and technical skills, as well as highly developed communication skills. I love working independently, but also thrive in environments where teamwork and collaboration are prioritized.",
           "I'm always expanding my knowledge of HTML, CSS, JavaScript, ReactJS, Java, Ruby, and Salesforce technologies, and looking to build a network and a career in the Twin Cities. Currently my favorite resources include Codefights.com, Codecademy.com, Codeschool.com, FreeCodeCamp.org and its podcast, and the JS Jabber podcast.",
           "I have several years of professional experience, though my background is in singing and acting. I hold both a Bachelor of Arts and a Bachelor of Music from Lawrence University in Appleton, WI."],
-          contact: ["Email: <a href='mailto:daniel.vinitsky@gmail.com'>daniel.vinitsky@gmail.com</a>", "Phone: <a href='tel:952-913-7157'>952-913-7157</a>", "LinkedIn: <a href= 'https://www.linkedin.com/in/daniel-vinitsky-80159488'>https://www.linkedin.com/in/daniel-vinitsky-80159488</a>"]
+          contact: ["Email: <a href='mailto:daniel.vinitsky@gmail.com'>daniel.vinitsky@gmail.com</a>", "Phone: <a href='tel:952-913-7157'>952-913-7157</a>", "LinkedIn: <a target='blank' href='https://www.linkedin.com/in/daniel-vinitsky-80159488'>https://www.linkedin.com/in/daniel-vinitsky-80159488</a>"]
         },
         navItems: ['home', 'about', 'portfolio', 'contact']
       }
@@ -78,12 +78,10 @@ class App extends Component {
           fullHTML += '<p>' + paragraph + '</p>';
         });
 
-        document.getElementsByClassName('pageContent')[0].innerHTML = '<p>' + fullHTML + '</p>';
+        document.getElementsByClassName('pageContent')[0].innerHTML = fullHTML;
 
       }
-
     }
-  
 
   render() {
    
@@ -99,9 +97,15 @@ class App extends Component {
         <main>
           <div className="pageContent">
             {this.state.pageContent.home.map(paragraph => {
-              return (
-                <p>{paragraph}</p>
-              )
+              if(paragraph.includes("<a target='blank' href='https://github.com/dvinitsky/Profile'>https://github.com/dvinitsky/Profile</a>")){
+                return (  
+                  <p key={paragraph}><a target='blank' href='https://github.com/dvinitsky/Profile'>https://github.com/dvinitsky/Profile</a></p>
+                )
+              }
+              else return (
+                <p key={paragraph}>{paragraph}</p>
+              ) 
+              
             })}
           </div>
 
