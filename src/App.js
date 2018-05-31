@@ -11,7 +11,7 @@ class App extends Component {
 
     this.state = {
         projects: [
-          {projectName: "SpotTempo",
+          {projectName: "SpotTempo (in progress)",
           projectURL: "http://spottempo.surge.sh",
           techUsed: "React, Spotify API",
           scope: 'major',
