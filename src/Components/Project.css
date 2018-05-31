@@ -5,8 +5,20 @@
     --usedTech-font-size: 14px;
 }
 
-.projectsContainer {
+.projectsWrapper {
     display: none;
+}
+
+.projectHeader {
+    padding-bottom: 0;
+}
+
+h2.projectHeader {
+    margin-top: 40px;
+}
+
+.minorProjectsContainer {
+    display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     text-align: center; 
     column-gap: var(--spaceMargin);
@@ -14,6 +26,25 @@
     margin-right: 30px;
     margin-top: 15px;
     margin-bottom: 15px;
+}
+
+.majorProjectsContainer {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(300px, 1fr));
+    text-align: center; 
+    column-gap: var(--spaceMargin);
+    row-gap: var(--spaceMargin);
+    margin-right: 30px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.majorProjectsContainer .projectName {
+    font-weight: bold;
+}
+
+.majorProjectsContainer .description {
+    font-size: 16px;
 }
 
 .project {

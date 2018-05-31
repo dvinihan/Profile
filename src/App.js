@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import {Project} from './Components/Project.js';
+import {ProjectsContainer} from './Components/ProjectsContainer.js';
 import {NavItem} from './Components/NavItem.js';
 
 
@@ -11,46 +11,59 @@ class App extends Component {
 
     this.state = {
         projects: [
+          {projectName: "SpotTempo",
+          projectURL: "http://spottempo.surge.sh",
+          techUsed: "React, Spotify API",
+          scope: 'major',
+          description: 'For my first major application, I set out to solve a problem from my everyday life- finding music on Spotofy to fit my current running speed. This app will allow Spotify users to select a specific personal playlist, and search for songs by BPM in that playlist. Challenges I encountered on this project were maintaining login state for the user, connecting properly to each Spotify API endpoint, and creating an app flow that allows users to smoothly log in and then access their music.'
+          },          
           {
             projectName: "Blue Forum",
             projectURL: "http://blue-forum.surge.sh",
             techUsed: "React",
+            scope: 'minor',
             description: 'My first independent React app. Employs props, state, and components to render a sleek interface for writing comments. My next goal with this project is to add a backend with MongoDB so that posts can be preserved between sessions.'
           },
           {
             projectName: "Jammin",
             projectURL: "http://daniel_v_jammin.surge.sh/",
             techUsed: "React",
+            scope: 'minor',
             description: 'Created as a part of the Codecademy React certificate. Employed newly acquired skills including passing props, setting state, and watching for text input.'
           },
           {
             projectName: "Tic-Tac-Toe",
             projectURL: "dv-tictactoe.surge.sh",
             techUsed: "React",
+            scope: 'minor',
             description: 'Simple Tic-Tac-Toe game using CSS Grid for layout, and React to implement square components.'
           },
           {
             projectName: "Pong",
             projectURL: "dv-pong.surge.sh",
             techUsed: "Javascript",
-            description: 'Built entirely in JavaScript, HTML and CSS, this project uses event watchin on the DOM to process arrow input.'
+            scope: 'minor',
+            description: 'Built entirely in JavaScript, HTML and CSS, this project uses event watchin on the DOM to process arrow key input.'
           },
           {
             projectName: "War (in progress)",
             projectURL: "http://dv-war.surge.sh/",
             techUsed: "Javascript",
+            scope: 'minor',
             description: 'WORKING -- Simple War game that generates random cards for the user and the computer player.'
           },
           {
             projectName: "Task Manager",
             projectURL: "http://dv-task-manager.surge.sh/",
             techUsed: "Javascript",
+            scope: 'minor',
             description: ''
           },
           {
             projectName: "Text Editor",
             projectURL: "dv-text-editor.surge.sh",
             techUsed: "Javascript",
+            scope: 'minor',
             description: ''
           }
         ],
@@ -68,11 +81,13 @@ class App extends Component {
   
     setpageContent(section) {
       if(section === "portfolio"){
-        document.getElementsByClassName('projectsContainer')[0].style.display = "grid";
+        document.getElementsByClassName('projectsWrapper')[0].style.display = "block";
+
         document.getElementsByClassName('pageContent')[0].innerHTML = "";
       }
       else {
-        document.getElementsByClassName('projectsContainer')[0].style.display = "none";
+        document.getElementsByClassName('projectsWrapper')[0].style.display = "none";
+
         let fullHTML = '';
         this.state.pageContent[section].forEach(paragraph => {
           fullHTML += '<p>' + paragraph + '</p>';
@@ -88,6 +103,9 @@ class App extends Component {
     return (
       <div>
         <header>
+
+          <img src= {require('./self_picture.jpg')} alt="Daniel Vinitsky" className="profilePicture" />
+
           <h1>Daniel Vinitsky</h1>
 
           <NavItem onClick={this.setpageContent} navItems={this.state.navItems} />
@@ -109,7 +127,7 @@ class App extends Component {
             })}
           </div>
 
-          <Project projects={this.state.projects}/>
+          <ProjectsContainer projects={this.state.projects}/>
 
         </main>
       </div>

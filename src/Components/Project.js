@@ -6,18 +6,12 @@ export class Project extends Component {
 
 	render(){
 		return(
-				<div className="projectsContainer pageContent">
-					{this.props.projects.map(element => {
-						return (
-							<div key={element.projectName} className="project">
-									<div className="projectName">{element.projectName}</div>
-									<div className="techUsed">Built with {element.techUsed}</div>
-									<div className="projectURL" ><a target="_blank" href={element.projectURL}>{element.projectURL}</a></div>
-									<div className="description">{element.description}</div>
-							</div>
-						)
-					})}
-				</div>
+			<div key={this.props.project.projectName} className="project">
+					<div className="projectName">{this.props.project.projectName}</div>
+					<div className="techUsed">Built with {this.props.project.techUsed}</div>
+					<div className="projectURL" ><a target="_blank" href={this.props.project.projectURL}>{this.props.project.projectURL}</a></div>
+					<div className="description">{this.props.project.description}</div>
+			</div>
 		);
 	}
 }
