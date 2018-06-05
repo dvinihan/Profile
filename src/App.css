@@ -9,17 +9,16 @@ header {
   padding: 15px;
   background-color: #a5484d;
   text-align: center;
-  width: auto;;
-	color: #dce0ac;
+  width: auto;
+  color: #dce0ac;
   padding-bottom: 15px;
 }
 
-h1{
-	padding: 10px 0 10px 0;
+h1 {
+  padding: 10px 0 10px 0;
 }
- 
 
-ul{
+ul {
   margin: 0 auto;
   text-align: center;
   width: auto;
