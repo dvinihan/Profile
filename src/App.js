@@ -79,7 +79,8 @@ class App extends Component {
           "I'm currently looking for a Software or Web Development position at a company or consulting agency in the Greater Minneapolis/St. Paul area. I enjoy learning on the job and extending my knowledge of varied technologies.",
           "I possess excellent organizational and technical skills, as well as highly developed communication skills. I love working independently, but also thrive in environments where teamwork and collaboration are prioritized.",
           "I'm always expanding my knowledge of HTML, CSS, JavaScript, ReactJS, Java, Ruby, and Salesforce technologies, and looking to build a network and a career in the Twin Cities. Currently my favorite resources include Codefights.com, Codecademy.com, Codeschool.com, FreeCodeCamp.org and its podcast, and the JS Jabber podcast.",
-          "I have several years of professional experience, though my background is in singing and acting. I hold both a Bachelor of Arts and a Bachelor of Music from Lawrence University in Appleton, WI."
+          "I have several years of professional experience, though my background is in singing and acting. I hold both a Bachelor of Arts and a Bachelor of Music from Lawrence University in Appleton, WI.",
+          "<a href='Resume.pdf'>Click here to see my resume.</a>"
         ],
         contact: [
           'Email: <a href="mailto:daniel.vinitsky@gmail.com">daniel.vinitsky@gmail.com</a>',
@@ -110,6 +111,8 @@ class App extends Component {
     }
   }
 
+
+
   render() {
     return (
       <div>
@@ -129,8 +132,12 @@ class App extends Component {
 
         <main>
           <div className="pageContent">
-            {this.state.pageContent.home.map(paragraph => {
-              return <p key={paragraph}>{paragraph}</p>;
+            {this.state.pageContent.home.map((paragraph, index) => {
+              if (index !== 5) {
+                return <p key={paragraph}>{paragraph}</p>;
+              } else {
+                return <a key={paragraph} href='Resume.pdf' target="blank">Click here to see my resume.</a>
+              }
             })}
           </div>
 
