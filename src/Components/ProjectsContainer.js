@@ -22,7 +22,7 @@ export class ProjectsContainer extends Component {
               })}
           </div>
 
-          <h1 className="projectHeader">Major Projects</h1>
+          <h2 className="projectHeader">Major Projects</h2>
           <div className="majorProjectsContainer">
             {this.props.projects
               .filter(project => project.scope === "major")
