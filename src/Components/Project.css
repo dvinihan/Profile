@@ -42,11 +42,21 @@ h2.projectHeader {
   margin-bottom: 15px;
 }
 
-.majorProjectsContainer .projectName {
+.professionalProjectsContainer {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(300px, 1fr));
+  text-align: center;
+  column-gap: var(--spaceMargin);
+  row-gap: var(--spaceMargin);
+  margin-right: 30px;
+  margin-bottom: 15px;
+}
+
+.professionalProjectsContainer .projectName {
   font-weight: bold;
 }
 
-.majorProjectsContainer .description {
+.professionalProjectsContainer .description {
   font-size: 16px;
 }
 

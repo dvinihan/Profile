@@ -12,8 +12,17 @@ export class ProjectsContainer extends Component {
               https://github.com/dvinitsky/Profile
             </a>
           </p>
-          <h1 className="projectHeader">Major Projects</h1>
 
+          <h1 className="projectHeader">Professional Projects</h1>
+          <div className="professionalProjectsContainer">
+            {this.props.projects
+              .filter(project => project.scope === "professional")
+              .map(element => {
+                return <Project project={element} />;
+              })}
+          </div>
+
+          <h1 className="projectHeader">Major Projects</h1>
           <div className="majorProjectsContainer">
             {this.props.projects
               .filter(project => project.scope === "major")

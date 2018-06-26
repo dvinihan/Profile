@@ -11,6 +11,14 @@ class App extends Component {
     this.state = {
       projects: [
         {
+          projectName: "Room Monopoly",
+          projectURL: "https://monopoly-rooms.herokuapp.com/",
+          techUsed: "EJS, MySQL, Javascript, Bootstrap",
+          scope: "professional",
+          description:
+            "I built this on contract for Youth Forum's Summerfest program. The app presents a simple web-based solution for a real-life monopoly-style game. Key components include administrator login, room and team tracking, and storing and editing all information by connecting to the MySQL database."
+        },
+        {
           projectName: "SpotTempo (in progress)",
           projectURL: "http://spottempo.surge.sh",
           techUsed: "React, Spotify API",
