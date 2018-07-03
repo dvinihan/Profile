@@ -99,19 +99,17 @@ const Home = () => (
 )
 
 const Contact = () => (
-  <div>
+  <main>
     <p>Email: <a href="mailto:daniel.vinitsky@gmail.com">daniel.vinitsky@gmail.com</a></p>
   
     <p>Phone: <a href="tel:952-913-7157">952-913-7157</a></p>
     
     <p>LinkedIn: <a target="blank" href="https://www.linkedin.com/in/daniel-vinitsky-80159488">https://www.linkedin.com/in/daniel-vinitsky-80159488</a></p>
-  </div>
+  </main>
 )
 
 const Portfolio = () => (
-  <div>
-    <ProjectsContainer projects={projects} />
-  </div>
+  <ProjectsContainer projects={projects} />
 )
 
 const App = () => (
@@ -126,19 +124,17 @@ const App = () => (
         <h1>Daniel Vinitsky</h1>
       </header>
 
-      <div>
-        <ul>
-          <li><Link to="/">Home</Link></li>
-          <li><Link to="/contact">Contact</Link></li>
-          <li><Link to="/portfolio">Portfolio</Link></li>
-        </ul>
+      <div className="navbar">
+        <Link className="link" to="/">Home</Link>
+        <Link className="link" to="/contact">Contact</Link>
+        <Link className="link" to="/portfolio">Portfolio</Link>
+      </div>
 
         <hr />
 
         <Route exact path="/" component={Home} />
         <Route path="/contact" component={Contact} />
         <Route path="/portfolio" component={Portfolio} />
-      </div>
     </div>
   </Router>
 )

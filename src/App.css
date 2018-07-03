@@ -1,9 +1,11 @@
+/* GENERAL */
 html {
   font-family: helvetica;
   width: auto;
   background-color: #7ca8cc;
 }
 
+/* HEADER */
 header {
   margin: 0;
   padding: 15px;
@@ -13,32 +15,29 @@ header {
   color: #dce0ac;
   padding-bottom: 15px;
 }
+.profilePicture {
+  max-width: 150px;
+}
 
+/* CONTENT */
+main {
+  margin-left: 30px;
+}
 h1 {
   padding: 10px 0 10px 0;
 }
-
-ul {
+.navbar {
   margin: 0 auto;
   text-align: center;
   width: auto;
 }
-
-li {
+.link {
   display: inline-block;
-  margin: 0 20px 0 20px;
-  font-size: 18px;
-  border: 1px solid #000000;
-  padding: 5px;
-  background-color: #323844;
-  color: white;
-  font-weight: 100;
-  border-radius: 10px;
-}
-.pageContent {
-  margin-left: 30px;
+  margin: 0 20px;
+  padding: 20px 0 10px 0;
+  font-size: 22px;
+  color: #323844;
+  font-weight: bold;
+  text-decoration: none;
 }
 
-.profilePicture {
-  max-width: 150px;
-}

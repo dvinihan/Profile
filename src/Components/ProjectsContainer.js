@@ -5,7 +5,7 @@ import "./Project.css";
 export class ProjectsContainer extends Component {
   render() {
     return (
-      <div className="pageContent">
+      <main>
         <div className="projectsWrapper">
           <p className="github">
             <a target="blank" href="https://github.com/dvinitsky/Profile">
@@ -40,7 +40,7 @@ export class ProjectsContainer extends Component {
               })}
           </div>
         </div>
-      </div>
+      </main>
     );
   }
 }
