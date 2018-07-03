@@ -1,10 +1,3 @@
-/*import React, { Component } from "react";
-import "./App.css";
-import { ProjectsContainer } from "./Components/ProjectsContainer.js";
-import { NavItem } from "./Components/NavItem.js";
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
-*/
-
 import React from 'react';
 import "./App.css";
 import { ProjectsContainer } from "./Components/ProjectsContainer.js";
