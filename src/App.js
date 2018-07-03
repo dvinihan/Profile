@@ -93,7 +93,7 @@ const Home = () => (
 
     <p>I have several years of professional experience, though my background is in singing and acting. I hold both a Bachelor of Arts and a Bachelor of Music from Lawrence University in Appleton, WI.</p>
 
-    <a href='Vinitsky - Resume.pdf' target="blank">Click here to see my resume.</a>
+    <a href="https://docs.google.com/document/d/1MovFkOIDv-OvWJgLvS30GPOLDMnftnMATe1cGiH9Smc/edit?usp=sharing" target="blank">Click here to see my resume.</a>
 
   </main>
 )
@@ -101,9 +101,9 @@ const Home = () => (
 const Contact = () => (
   <main>
     <p>Email: <a href="mailto:daniel.vinitsky@gmail.com">daniel.vinitsky@gmail.com</a></p>
-  
+
     <p>Phone: <a href="tel:952-913-7157">952-913-7157</a></p>
-    
+
     <p>LinkedIn: <a target="blank" href="https://www.linkedin.com/in/daniel-vinitsky-80159488">https://www.linkedin.com/in/daniel-vinitsky-80159488</a></p>
   </main>
 )
@@ -121,7 +121,7 @@ const App = () => (
           alt="Daniel Vinitsky"
           className="profilePicture"
         />
-        <h1>Daniel Vinitsky</h1>
+        <h1 className="header-name">Daniel Vinitsky</h1>
       </header>
 
       <div className="navbar">
@@ -130,11 +130,11 @@ const App = () => (
         <Link className="link" to="/portfolio">Portfolio</Link>
       </div>
 
-        <hr />
+      <hr />
 
-        <Route exact path="/" component={Home} />
-        <Route path="/contact" component={Contact} />
-        <Route path="/portfolio" component={Portfolio} />
+      <Route exact path="/" component={Home} />
+      <Route path="/contact" component={Contact} />
+      <Route path="/portfolio" component={Portfolio} />
     </div>
   </Router>
 )
