@@ -9,12 +9,20 @@ import {
 
 const projects = [
   {
+    projectName: "Summer Fest Registration",
+    projectURL: "https://summer-fest-registration.herokuapp.com/",
+    techUsed: "React, MySQL, Javascript, Node",
+    scope: "professional",
+    description:
+      "I built this on contract for Youth Forum's Summerfest program. The app presents a simple web-based solution for camp registration. Key components include administrator and group-leader login, as well as storing and editing all information by connecting to the MySQL database."
+  },
+  {
     projectName: "Room Monopoly",
     projectURL: "https://monopoly-rooms.herokuapp.com/",
     techUsed: "EJS, MySQL, Javascript, Bootstrap",
     scope: "professional",
     description:
-      "I built this on contract for Youth Forum's Summerfest program. The app presents a simple web-based solution for a real-life monopoly-style game. Key components include administrator login, room and team tracking, and storing and editing all information by connecting to the MySQL database."
+      "Also built for Youth Forum's Summerfest program, this app presents a simple web-based solution for a real-life monopoly-style game. Key components include administrator login, room and team tracking, and storing and editing all information by connecting to the MySQL database."
   },
   {
     projectName: "SpotTempo",
