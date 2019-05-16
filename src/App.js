@@ -91,13 +91,11 @@ const projects = [
 
 const Home = () => (
   <main>
-    <p>Welcome! I am a Software Developer with skills in HTML, CSS, JavaScript, ReactJS, Node.js, and more.</p>
+    <p>Welcome! I am a Software Developer specializing in ReactJS, JavaScript, HTML, CSS, Node.js, and more.</p>
 
-    <p>I'm currently looking for a Software or Web Development position at a company or consulting agency in the Greater Minneapolis/St. Paul area. I enjoy learning on the job and extending my knowledge of varied technologies.</p>
+    <p>I'm currently working at Best Buy in Richfield, MN contributing to their website. I enjoy learning more about the platform and architecture over time, and look forward to deepening my understanding of large-scale websites.</p>
 
     <p>I possess excellent organizational and technical skills, as well as highly developed communication skills. I love working independently, but also thrive in environments where teamwork and collaboration are prioritized.</p>
-
-    <p>I'm always expanding my knowledge of HTML, CSS, JavaScript, ReactJS, Java, Ruby, and Salesforce technologies, and looking to build a network and a career in the Twin Cities. Currently my favorite resources include Codefights.com, Codecademy.com, Codeschool.com, FreeCodeCamp.org and its podcast, and the JS Jabber podcast.</p>
 
     <p>I have several years of professional experience, though my background is in singing and acting. I hold both a Bachelor of Arts and a Bachelor of Music from Lawrence University in Appleton, WI.</p>
 
